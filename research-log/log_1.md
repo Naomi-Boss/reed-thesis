@@ -3,23 +3,21 @@ Thesis Weekly Log
 
 ### Week 1: 17 February - 23 February
 
-#### Overview:
+#### This week’s research and objectives
 
-This week was about initial research and establishing a timeline for
-projects.
+Since this is week 1, I did not accomplish much in the terms of
+research. I spent time gathering resources and setting up this github
+repository. I’ve done some intial reading of the resources. I have
+gathered textbooks on sampling, surveys, and polls. Some areas I want to
+read further about is volunteer subject sampling, haphazard sampling,
+and quota sampling.
 
-#### Research
-
-I have gathered four textbooks: *Sampling* by Steven K. Thompson,
-*Design and Inference in Finite Population Sampling* by A.S. Hedayat and
-Bikas K. Sinha, *Adaptive Sampling* by Steven K. Thompson and George
-A.F. Seber, and *Sampling Techniques* by William G. Cochran. My goal was
-to gain an overview of sampling as a whole, and then take a deep look
-into non-probability sampling.
-
-#### Looking Forward
+#### Coming up
 
 With the next few weeks, I want to have completed a literature review on
 non-probability sampling. I need to set up an appointment with Robin
 Ford so that I can establish a relationship with them, and gain some
 insight on the best way to acquire literature in the sciences.
+Currently, all of my text resources have been published prior to 2000. I
+think it would be useful to find a more recently published resource to
+see how the methodolgy and opinions of sampling have changed.
