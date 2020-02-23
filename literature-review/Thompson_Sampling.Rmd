@@ -7,9 +7,17 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## GitHub Documents
-Author:
-Year:
-Title:
-Summary:
-How does this relate?
+#### Citation Information
+Author: Steven K. Thompson
+Year: 1992
+Title: Sampling
+Publisher: John Wiley & Sons, Inc
+
+
+### Summary:
+* 
+
+### Analysis
+
+
+### Thoughts
