@@ -1,0 +1,6 @@
+---
+title: "Statement of Objectives"
+output: github_document
+---
+
+I am interested in studying non-probability sampling as it relates to political polling. I will be examining the theory behind non-probaiblity sampling, the theory and motivation behind polling.
