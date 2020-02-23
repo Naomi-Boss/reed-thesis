@@ -10,10 +10,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ### Week 1: 17 February - 23 February
 
 #### Overview:
-  This week was about initial research and establishing a timeline for projects.
+  as this is week 1, I did not accomplish much in the terms of research. I spent time gathering resources and setting up this github repository. I've done some intial reading of the resources.
 
 #### Research
- I have gathered four textbooks: *Sampling* by Steven K. Thompson, *Design and Inference in Finite Population Sampling* by A.S. Hedayat and Bikas K. Sinha, *Adaptive Sampling* by Steven K. Thompson and George A.F. Seber, and *Sampling Techniques* by William G. Cochran. My goal was to gain an overview of sampling as a whole, and then take a deep look into non-probability sampling. 
+ I have gathered textbooks on sampling, surveys, and polls.
   
 
 #### Looking Forward
