@@ -1,0 +1,15 @@
+---
+title: "*Sampling* Steven K. Thompson"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## GitHub Documents
+Author:
+Year:
+Title:
+Summary:
+How does this relate?
