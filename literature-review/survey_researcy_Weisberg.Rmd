@@ -1,0 +1,23 @@
+---
+title: "An Introduction to Survey Research, Polling, and Data Analysis"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### Citation Information
+Author: Herbert F. Weisberg, Jon A. Krosnick, Bruce D. Bowen
+Year: 1996
+Title: An Introduction to Survey Research, Polling, and Data Analysis, Third Edition
+Publisher: Sage Publications, Inc
+
+
+### Summary:
+* 
+
+### Analysis
+
+
+### Thoughts
