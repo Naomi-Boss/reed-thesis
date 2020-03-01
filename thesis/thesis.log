@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  29 FEB 2020 20:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  29 FEB 2020 21:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -735,139 +735,169 @@ Non-PDF special ignored!
 ] [13] [14
 
 
-]
-Chapter 1.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.226 ...ter{R Markdown Basics}\label{rmd-basics}}
+l.240 ...ter{Literature Review}\label{lit-review}}
                                                    [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.226 ...ter{R Markdown Basics}\label{rmd-basics}}
+l.240 ...ter{Literature Review}\label{lit-review}}
                                                    [2
 
 ]
+Chapter 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.255 ...Mathematics and Science}\label{math-sci}}
+                                                   [3]pdfTeX warning (ext4): de
+stination with the same identifier (name{page.4}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.255 ...Mathematics and Science}\label{math-sci}}
+                                                   [4
+
+]
 Chapter 2.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 228.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 267.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 239.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.277 H
-       ere is the first sentence. Here is another sentence. Here is the last...
-[3]
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 292.
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
+\T1/lmr/m/n/12 (+20) ([]$\T1/lmtt/m/n/12 http : / / mirror . utexas . edu / cta
+n / info / symbols / comprehensive / symbols -[]
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.328 \includegraphics
-                      {thesis_files/figure-latex/pressure-1.pdf} [4]
-<thesis_files/figure-latex/pressure-1.pdf, id=259, 434.62375pt x 250.9375pt>
-File: thesis_files/figure-latex/pressure-1.pdf Graphic file (type pdf)
-<use thesis_files/figure-latex/pressure-1.pdf>
-Package pdftex.def Info: thesis_files/figure-latex/pressure-1.pdf  used on inpu
-t line 328.
-(pdftex.def)             Requested size: 434.62268pt x 250.93687pt.
+[6]
+Chapter 3.
 
-Overfull \hbox (18.6275pt too wide) in paragraph at lines 328--329
-[][] 
- []
+LaTeX Warning: Reference `tab:maxdelays' on page 7 undefined on input line 380.
 
-[5 <./thesis_files/figure-latex/pressure-1.pdf>]
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 381
-.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [6] [7
+
+[7
 
 ]
-<thesis_files/figure-latex/march3plot-1.pdf, id=287, 423.5825pt x 206.7725pt>
-File: thesis_files/figure-latex/march3plot-1.pdf Graphic file (type pdf)
-<use thesis_files/figure-latex/march3plot-1.pdf>
-Package pdftex.def Info: thesis_files/figure-latex/march3plot-1.pdf  used on in
-put line 460.
-(pdftex.def)             Requested size: 423.58147pt x 206.77199pt.
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 392.
+<figure/reed.jpg, id=279, 250.9375pt x 251.94125pt>
+File: figure/reed.jpg Graphic file (type jpg)
+<use figure/reed.jpg>
+Package pdftex.def Info: figure/reed.jpg  used on input line 396.
+(pdftex.def)             Requested size: 250.77698pt x 251.79454pt.
+[8
 
-Overfull \hbox (7.58629pt too wide) in paragraph at lines 460--461
-[][] 
- []
+ <./figure/reed.jpg>]
 
-[8 <./thesis_files/figure-latex/march3plot-1.pdf>]
-Chapter 3.
+LaTeX Warning: Reference `rmd-basics' on page 9 undefined on input line 402.
+
+<thesis_files/figure-latex/delaysboxplot-1.pdf, id=288, 423.5825pt x 313.17pt>
+File: thesis_files/figure-latex/delaysboxplot-1.pdf Graphic file (type pdf)
+<use thesis_files/figure-latex/delaysboxplot-1.pdf>
+Package pdftex.def Info: thesis_files/figure-latex/delaysboxplot-1.pdf  used on
+ input line 413.
+(pdftex.def)             Requested size: 423.58147pt x 313.16922pt.
 [9
 
-] [10
+ <./thesis_files/figure-latex/delaysboxplot-1.pdf>]
+<figure/subdivision.pdf, id=303, 220.825pt x 89.33376pt>
+File: figure/subdivision.pdf Graphic file (type pdf)
+<use figure/subdivision.pdf>
+Package pdftex.def Info: figure/subdivision.pdf  used on input line 424.
+(pdftex.def)             Requested size: 165.61833pt x 67.00014pt.
+File: figure/subdivision.pdf Graphic file (type pdf)
+<use figure/subdivision.pdf>
+Package pdftex.def Info: figure/subdivision.pdf  used on input line 432.
+(pdftex.def)             Requested size: 220.82445pt x 89.33353pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 439.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 439.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 439.
+[10
 
-]
-Chapter 4.
-[11] [12
+ <./figure/subdivision.pdf>]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 456.
 
-] [13] [14
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[11] [12] [13
+
+] [14
 
 ]
 Appendix A.
-[15] [16
-
-]
+[15] [16]
 Appendix B.
-[17] [18
+[17
+
+] [18
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 550.
-[19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 550.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 565.
+[19
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 565.
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 550.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 550.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 565.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 565.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2979229E29666031E2AA9B523D836C26;1653.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 550.
+(rerunfilecheck)             Checksum: BAE2244248CCA0C3C6447002BCC7DEDF;1416.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 565.
  ) 
 Here is how much of TeX's memory you used:
- 10784 strings out of 492616
- 166650 string characters out of 6129482
- 289405 words of memory out of 5000000
- 14321 multiletter control sequences out of 15000+600000
- 57914 words of font info for 85 fonts, out of 8000000 for 9000
+ 10846 strings out of 492616
+ 167252 string characters out of 6129482
+ 290498 words of memory out of 5000000
+ 14343 multiletter control sequences out of 15000+600000
+ 75704 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,49p,626b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
-/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/
+ 41i,12n,49p,831b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
+texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2019/
 texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist
-/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/p
-ublic/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/l
-mbxi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
-></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/loca
-l/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/
-2019/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2019/texmf
--dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2019/texmf-dist/font
-s/type1/public/lm/lmtt12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/pu
-blic/lm/lmtti10.pfb>
-Output written on thesis.pdf (37 pages, 235083 bytes).
+/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc
+/dvips/lm/lm-rm.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/l
+mbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/
+texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/201
+9/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2019/texmf-dist
+/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1
+/public/lm/lmri12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm
+/lmro12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pf
+b></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive
+/2019/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2019/texm
+f-dist/fonts/type1/public/lm/lmtti10.pfb></usr/local/texlive/2019/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on thesis.pdf (37 pages, 372095 bytes).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
- 375 compressed objects within 4 object streams
- 99 named destinations out of 1000 (max. 500000)
- 10459 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 496 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 14536 words of extra memory for PDF output out of 17280 (max. 10000000)
 
