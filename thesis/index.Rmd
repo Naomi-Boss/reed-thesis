@@ -1,9 +1,9 @@
 ---
-author: 'Your R. Name'
-date: 'May 20xx'
+author: 'Naomi A. Boss'
+date: 'December 2020'
 institution: 'Reed College'
 division: 'Mathematics and Natural Sciences'
-advisor: 'Advisor F. Name'
+advisor: 'Andrew P. Bray'
 # If you have more two advisors, un-silence line 7
 #altadvisor: 'Your Other Advisor'
 department: 'Mathematics'
