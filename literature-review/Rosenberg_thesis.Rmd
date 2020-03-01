@@ -1,0 +1,10 @@
+---
+title: "Summary of Kaelyn Rosenberg's Thesis"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Kaelyn Rosenberg (Mathematics with a concentration in Statistics)
+Exploring data quality in 2016 U.S. presidential election polls
