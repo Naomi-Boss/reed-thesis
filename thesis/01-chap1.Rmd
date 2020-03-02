@@ -1,64 +1,62 @@
 
 # Literature Review {#lit-review}
 
-##Introduction
+* Probability Theory (establishing definitions)
+     - Random Variables & Distributions
+     - LLN & CLT
 
-*Probability Theory (establishing definitions)
-     *Random Variables & Distributions
-     *LLN & CLT
+* Statistical Inference
+     - frequentist v Bayesian
+     - sampling distribution
 
-*Statistical Inference
-     *frequentist v Bayesian
-     *sampling distribution
-
-*Survey Methodology
-     *Sampling Procedures
-          *Methods (section likely mixed rather than divided like so)
-               *Simple random sampling
-               *Stratified random sampling
-               *Systematic sampling
-               *Cluster 
-               *Stratified sampling
-          *Advantages/Disadvantages
-     *Data Collection
-          *Designing survey (sample unit, sample size, hypothesis/motivation role)
-          *Survey method (brief list e.g. interview, questionnaire)
-     *Data Analysis
-          *Hypothesis testing
-          *Inference
+* Survey Methodology
+     - Sampling Procedures
+          - Methods (section likely mixed rather than divided like so)
+               - Simple random sampling
+               - Stratified random sampling
+               - Systematic sampling
+               - Cluster 
+               - Stratified sampling
+          - Advantages/Disadvantages
+     - Data Collection
+          - Designing survey (sample unit, sample size, hypothesis/motivation role)
+          - Survey method (brief list e.g. interview, questionnaire)
+     - Data Analysis
+          - Hypothesis testing
+          - Inference
      
-*Non-Probability Sampling
-     *Sampling Procedures
-          *Methods
-               *Convenience sampling
-               *Consecutive sampling
-               *Judgmental Sampling
+* Non-Probability Sampling
+     - Sampling Procedures
+          - Methods
+               - Convenience sampling
+               - Consecutive sampling
+               - Judgmental Sampling
           *Advantages/Disadvantages
-     *Data Collection
-          *Designing Survey (sample unit, sample size, hypothesis/motivation role)
-          *Survey method (brief list e.g. interview, questionnaire)
-     *Data Analysis
-          *Hypothesis testing
-          *Inference
+     - Data Collection
+          - Designing Survey (sample unit, sample size, hypothesis/motivation role)
+          - Survey method (brief list e.g. interview, questionnaire)
+     - Data Analysis
+          - Hypothesis testing
+          - Inference
           
-*Election Polling
-     *Purpose
-     *Design
-          *Population
-               *Sample selection
-          *Methods
-          *Sample size
-          *Question design
-               *Wording impacting response
-     *Data collection
-          *Implementation
-          *Errors
-               *Sampling Error
-               *Non-Sampling Error
-                    *Questionaire design
-                    *Interviewer effects
-                    *Responder effects
-     *Data analysis
+* Election Polling
+     - Purpose
+     - Design
+          - Population
+               - Sample selection
+          - Methods
+          - Sample size
+          - Question design
+               - Wording impacting response
+     - Data collection
+          - Implementation
+          - Errors
+               - Sampling Error
+               - Non-Sampling Error
+                    - Questionaire design
+                    - Interviewer effects
+                    - Responder effects
+     - Data analysis
      
 
 
