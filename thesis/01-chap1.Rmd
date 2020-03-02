@@ -3,16 +3,63 @@
 
 ##Introduction
 
-##Basic Sampling
-*Simple random sampling
-*Probability background
-*Finite population sampling
-*Use in surveying/Design
-*Errors/cons of tradional sampling
+*Probability Theory (establishing definitions)
+     *Random Variables & Distributions
+     *LLN & CLT
 
-##Non-probability Sampling
+*Statistical Inference
+     *frequentist v Bayesian
+     *sampling distribution
 
-##Polling
+*Survey Methodology
+     *Sampling Procedures
+          *Methods (section likely mixed rather than divided like so)
+               *Simple random sampling
+               *Stratified random sampling
+               *Systematic sampling
+               *Cluster 
+               *Stratified sampling
+          *Advantages/Disadvantages
+     *Data Collection
+          *Designing survey (sample unit, sample size, hypothesis/motivation role)
+          *Survey method (brief list e.g. interview, questionnaire)
+     *Data Analysis
+          *Hypothesis testing
+          *Inference
+     
+*Non-Probability Sampling
+     *Sampling Procedures
+          *Methods
+               *Convenience sampling
+               *Consecutive sampling
+               *Judgmental Sampling
+          *Advantages/Disadvantages
+     *Data Collection
+          *Designing Survey (sample unit, sample size, hypothesis/motivation role)
+          *Survey method (brief list e.g. interview, questionnaire)
+     *Data Analysis
+          *Hypothesis testing
+          *Inference
+          
+*Election Polling
+     *Purpose
+     *Design
+          *Population
+               *Sample selection
+          *Methods
+          *Sample size
+          *Question design
+               *Wording impacting response
+     *Data collection
+          *Implementation
+          *Errors
+               *Sampling Error
+               *Non-Sampling Error
+                    *Questionaire design
+                    *Interviewer effects
+                    *Responder effects
+     *Data analysis
+     
 
 
      
