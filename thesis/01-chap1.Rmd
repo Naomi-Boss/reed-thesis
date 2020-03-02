@@ -1,10 +1,19 @@
 
 # Literature Review {#lit-review}
 
-## Literature Introduction
+##Introduction
 
-## Topic 1
+##Basic Sampling
+*Simple random sampling
+*Probability background
+*Finite population sampling
+*Use in surveying/Design
+*Errors/cons of tradional sampling
 
-## Topic 2
+##Non-probability Sampling
 
-## Topic 3
+##Polling
+
+
+     
+
