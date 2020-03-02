@@ -1,15 +1,17 @@
 
 # Literature Review {#lit-review}
 
-* Probability Theory (establishing definitions)
-     - Random Variables & Distributions
-     - LLN & CLT
+## Probability Theory (establishing definitions)
+ 
+### Random Variables & Distributions
+ 
+### LLN & CLT
 
-* Statistical Inference
+## Statistical Inference
      - frequentist v Bayesian
      - sampling distribution
 
-* Survey Methodology
+## Survey Methodology
      - Sampling Procedures
           - Methods (section likely mixed rather than divided like so)
                - Simple random sampling
@@ -25,13 +27,13 @@
           - Hypothesis testing
           - Inference
      
-* Non-Probability Sampling
+## Non-Probability Sampling
      - Sampling Procedures
           - Methods
                - Convenience sampling
                - Consecutive sampling
                - Judgmental Sampling
-          *Advantages/Disadvantages
+          ##Advantages/Disadvantages
      - Data Collection
           - Designing Survey (sample unit, sample size, hypothesis/motivation role)
           - Survey method (brief list e.g. interview, questionnaire)
@@ -39,7 +41,7 @@
           - Hypothesis testing
           - Inference
           
-* Election Polling
+## Election Polling
      - Purpose
      - Design
           - Population
