@@ -1,15 +1,6 @@
 
 # Literature Review {#lit-review}
 
-## Probability Theory (establishing definitions)
- 
-### Random Variables & Distributions
- 
-### LLN & CLT
-
-## Statistical Inference
-     - frequentist v Bayesian
-     - sampling distribution
 
 ## Survey Methodology
      - Sampling Procedures
