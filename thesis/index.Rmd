@@ -4,8 +4,6 @@ date: 'December 2020'
 institution: 'Reed College'
 division: 'Mathematics and Natural Sciences'
 advisor: 'Andrew P. Bray'
-# If you have more two advisors, un-silence line 7
-#altadvisor: 'Your Other Advisor'
 department: 'Mathematics'
 degree: 'Bachelor of Arts'
 title: 'My Final College Paper'
