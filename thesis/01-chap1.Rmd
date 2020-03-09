@@ -72,6 +72,23 @@ $$
 $$
 (2)
 **Cluster:**
+*M*: total number of seconary units
+*N*: the number of primary units
+*M_i* total number of secondary units in the *i*th primary unit
+$x_i$: the total of the values in the *i*th primary unit
+$x_{ij}$: the *j*th secondary unit in the *i*th primary unit
+$\tau$: population total of secondary units
+$\mu$: population mean per secondary unit
+$\mu_1$: population mean per primary unit
+$\hat{\tau}$: unbiased estimator of population total
+$\text{var}(\hat{\tau})$: variance of the unbiased population total estimator 
+$\sigma^2_u$: variance of the primary unit totals
+$\widehat{\text{var}}(\hat{\tau})$: unbiased estimate of the variance
+$s_u^2$: sample variance of the primary unit totals
+$\hat{\tau}_r$: ratio estimator of population total
+*r*: sample ratio
+$p_i$: probability of draw proportional to *i*th primary unit size.
+
 (1)Cluster sampling is similar to stratified sampling because both methods involve segmenting the primary population; however, the choice for how the population is split is different. A unit is included in the sample if it falls within the partition of the cluster. When calculating probabilities, you need to consider how many clusters there are, as well as how many units are within each cluster. A cluster sample can be advantageous because it is cheaper to conduct than other methods. Moreover, populations are often distributed in natural clusters such as comparing universities. (1)
 
 (2)The structure of cluster sampling and systemic sampling is the same. First the population is partitioned into units called *primary units*. Within each unit was have *secondary units*, or the units of observations. The primary unit of a cluster sample is determined by spacing proximity. On the other hand, the primary unit of a systemic sample is determined by equally spaced secondary units. The key aspect of cluster sampling and systematic sampling is that you choose the sample by selecting primary units, therefore, all secondary units in a primary unit will be included in the sample. There is variability in characterisitics of the primary units in cluster sampling, such as size and shape, which can provide supplementary information but can affect the efficiency of the sample.
@@ -120,6 +137,13 @@ $$
 The population mean per primary unit is calculated by dividing the ratio estimator by the number of primary units. (2)
 
 (1) Systemactic sampling is a specific kind of cluster sampling. First decide on the number of samples n. Choose a random number between 1 and the number of clusters, this will (1)
+
+(2) The Hansen-Hurwits estimator is a cluster sampling method which proportionalizes the probability of drawing the primary unit based on the size. The unbiased Hansen-Hurwitz estimator is
+$$
+\hat{\tau}_p = \frac{M}{n}\sum^n_{i=1}\frac{x_i}{M_i}
+$$
+
+
 
 
           - Advantages/Disadvantages
