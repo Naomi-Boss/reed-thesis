@@ -2,16 +2,16 @@
 # Literature Review {#lit-review}
 
 ## Survey Methodology
-        (2)When you are trying to make asertain something about a population, the most accurate method would be to take data from the entire population. Evaluating the entire population can be cost and time insenstivie. Instead, one may utilize sampling, making an assesment of the population by some smaller part of the population. An important part of conducting a survey is to determine the best method to utilize. Deciding a sample size impacts the precision of the estimate and if the sample is the population, then the estimate is exact. Thus, it is often important to calculate the probability that the estimate is exact.(2)(3) There are two general kinds of sampling: probability and non-probability. The difference between the two is that with probability sampling, a probability of a draw is known. (3)
+        [@thompson_adaptive]When you are trying to make asertain something about a population, the most accurate method would be to take data from the entire population. Evaluating the entire population can be cost and time insenstivie. Instead, one may utilize sampling, making an assesment of the population by some smaller part of the population. An important part of conducting a survey is to determine the best method to utilize. Deciding a sample size impacts the precision of the estimate and if the sample is the population, then the estimate is exact. Thus, it is often important to calculate the probability that the estimate is exact.[@thompson_adaptive][@hed91] There are two general kinds of sampling: probability and non-probability. The difference between the two is that with probability sampling, a probability of a draw is known. [@hed91]
         - Sampling Procedures
      (1-9)
      
      Probability sampling is used in surveying.
           - Methods (section likely mixed rather than divided like so)
 **Simple Random Sampling**
-(1)Simple reandom sampling is a procedure in which you take n independent samples from a population of size N. There are two ways of executing a simple random sample, with replacement and without replacement. If you survey with replacement, every sample has probabiliy 1/N of being drawn.  The advantage of surveying without replacement is that you do not have repeated observations in the sample. In finite population sampling a duplicate observation does not provide new information, so it is more usefule to sample without replacement. The samples in the population are still considered indepdent samples; however, since the population decreases by one every draw, the probability becomes $\frac{n!\text{N-n}!}{N!}$. (1)
+[@lohr_sampling]Simple reandom sampling is a procedure in which you take n independent samples from a population of size N. There are two ways of executing a simple random sample, with replacement and without replacement. If you survey with replacement, every sample has probabiliy 1/N of being drawn.  The advantage of surveying without replacement is that you do not have repeated observations in the sample. In finite population sampling a duplicate observation does not provide new information, so it is more usefule to sample without replacement. The samples in the population are still considered indepdent samples; however, since the population decreases by one every draw, the probability becomes $\frac{n!\text{N-n}!}{N!}$. [@lohr_sampling]
 
-(2)When you draw n distinct units of observation(unit) from a population of size N without replacement, it is called *Simple Random Sampling*. Each unit is indepdent of one another with equal probabilty of being drawn. The probability of drawing a specific unit from the population is 1/N. You can use a random number generator on a computer to determine which units to include in your sample. Since each unit has equal probability of being drawn, the population mean is the average of the observations:
+[@thompson_adaptive]When you draw n distinct units of observation(unit) from a population of size N without replacement, it is called *Simple Random Sampling*. Each unit is indepdent of one another with equal probabilty of being drawn. The probability of drawing a specific unit from the population is 1/N. You can use a random number generator on a computer to determine which units to include in your sample. Since each unit has equal probability of being drawn, the population mean is the average of the observations:
 $$
 \mu = \frac{1}{N} \left(x_1 + x_2 + \cdots + x_n \right) = \frac{1}{N} \sum^{N}_{i=1} x_i
 $$
@@ -48,11 +48,11 @@ The unbiased estimator of the variance of the sample mean is
 $$
 \widehat{\text{var}} \left( \overline{x}_n \right) = \frac{s^2}{n}
 $$
-(2)
+[@thompson_adaptive]
 **Stratified:**
-(1)Stratified random sampling is a variation of sampling in which you partition the population into disjoint subpopulations that you sample from. The overall outcome of the survey is the combination of independent probability samples taken from the disjoint groups. There are several reasons why stratified random sampling can be advantageous. Stratified sampling can provide more precise estimates, especially if your aim involves comparing subgroups. Moreover, it allows flexibility in the method of conducting the surveye by customizing for each strata.(1)
+[@lohr_sampling]Stratified random sampling is a variation of sampling in which you partition the population into disjoint subpopulations that you sample from. The overall outcome of the survey is the combination of independent probability samples taken from the disjoint groups. There are several reasons why stratified random sampling can be advantageous. Stratified sampling can provide more precise estimates, especially if your aim involves comparing subgroups. Moreover, it allows flexibility in the method of conducting the surveye by customizing for each strata.[@lohr_sampling]
 
-(2)Another method of sampling is called stratified sampling, where you separate the population into disjoint subpopulations algorithmically. Then you can sample from each strata independenty. You can combine the mean and variations of each strata to caluclate the total variance and mean of the sample. One goal when designing the partition, is to minimize the variance within each strata. If the sampling procedure of each strata is simple random sampling, then the method is referred to as stratified random sampling. Both the sample mean and the *i*th observation are random variables
+[@thompson_adaptive]Another method of sampling is called stratified sampling, where you separate the population into disjoint subpopulations algorithmically. Then you can sample from each strata independenty. You can combine the mean and variations of each strata to caluclate the total variance and mean of the sample. One goal when designing the partition, is to minimize the variance within each strata. If the sampling procedure of each strata is simple random sampling, then the method is referred to as stratified random sampling. Both the sample mean and the *i*th observation are random variables
 Here we can define elements and probabilities for stratified sampling. Let *h* refer to a specific strata, with the population partitioned into *L* stratas. Let us define the terms and variables associated with stratified sampling.
 Let h be a designator of the strata. The total population size is the sum of the sizes of each strata, $N_h$. The sample size is the sum of the samples taken from each strata, denoted $n_h$. We define $\tau$ as the sum of the unit values in the population, and $\tau_h$ to be the sum of the unit values in strata *h*. The population mean is $\mu/N$ and the mean of each strata is $\mu_h = \tau_h/N_h$.
 Let $\hat{\tau}_h$ be the unbiased estimator of $\tau_h$. The unbiased estimator of the population is
@@ -70,7 +70,7 @@ The unbiased variance of the estimator, given that the sample selection from eac
 $$
 \widehat{\text{var}} \left( \hat{\mu}_{st} \right) = \frac{1}{N^2} \sum^L_{h=1} \hat{\text{var}} \left(\hat{\tau}_{st}\right)
 $$
-(2)
+[@thompson_adaptive]
 **Cluster:**
 *M*: total number of seconary units
 *N*: the number of primary units
@@ -89,9 +89,9 @@ $\hat{\tau}_r$: ratio estimator of population total
 *r*: sample ratio
 $p_i$: probability of draw proportional to *i*th primary unit size.
 
-(1)Cluster sampling is similar to stratified sampling because both methods involve segmenting the primary population; however, the choice for how the population is split is different. A unit is included in the sample if it falls within the partition of the cluster. When calculating probabilities, you need to consider how many clusters there are, as well as how many units are within each cluster. A cluster sample can be advantageous because it is cheaper to conduct than other methods. Moreover, populations are often distributed in natural clusters such as comparing universities. (1)
+[@lohr_sampling]Cluster sampling is similar to stratified sampling because both methods involve segmenting the primary population; however, the choice for how the population is split is different. A unit is included in the sample if it falls within the partition of the cluster. When calculating probabilities, you need to consider how many clusters there are, as well as how many units are within each cluster. A cluster sample can be advantageous because it is cheaper to conduct than other methods. Moreover, populations are often distributed in natural clusters such as comparing universities. [@lohr_sampling]
 
-(2)The structure of cluster sampling and systemic sampling is the same. First the population is partitioned into units called *primary units*. Within each unit was have *secondary units*, or the units of observations. The primary unit of a cluster sample is determined by spacing proximity. On the other hand, the primary unit of a systemic sample is determined by equally spaced secondary units. The key aspect of cluster sampling and systematic sampling is that you choose the sample by selecting primary units, therefore, all secondary units in a primary unit will be included in the sample. There is variability in characterisitics of the primary units in cluster sampling, such as size and shape, which can provide supplementary information but can affect the efficiency of the sample.
+[@thompson_adaptive]The structure of cluster sampling and systemic sampling is the same. First the population is partitioned into units called *primary units*. Within each unit was have *secondary units*, or the units of observations. The primary unit of a cluster sample is determined by spacing proximity. On the other hand, the primary unit of a systemic sample is determined by equally spaced secondary units. The key aspect of cluster sampling and systematic sampling is that you choose the sample by selecting primary units, therefore, all secondary units in a primary unit will be included in the sample. There is variability in characterisitics of the primary units in cluster sampling, such as size and shape, which can provide supplementary information but can affect the efficiency of the sample.
 
 The selection of primary units is conducted by other sampling procedures.You can use simple random sampling to select a primary unit. Calculating the unbiased estimators using simple random sampling without replacement:
 Estimator of population total
@@ -134,11 +134,11 @@ $$
 \widehat{\text{var}} \left( \hat{\tau}_r \right) \approx \frac{N(N-n)}{n(N-1)} \sum_{i=1}^n
 \left( x_i - rM_i\right)^2 
 $$
-The population mean per primary unit is calculated by dividing the ratio estimator by the number of primary units. (2)
+The population mean per primary unit is calculated by dividing the ratio estimator by the number of primary units. [@thompson_adaptive]
 
-(1) Systemactic sampling is a specific kind of cluster sampling. First decide on the number of samples n. Choose a random number between 1 and the number of clusters, this will (1)
+[@lohr_sampling] Systemactic sampling is a specific kind of cluster sampling. First decide on the number of samples n. Choose a random number between 1 and the number of clusters, this will [@lohr_sampling]
 
-(2) The Hansen-Hurwits estimator is a cluster sampling method which proportionalizes the probability of drawing the primary unit based on the size. The unbiased Hansen-Hurwitz estimator is
+[@thompson_adaptive] The Hansen-Hurwits estimator is a cluster sampling method which proportionalizes the probability of drawing the primary unit based on the size. The unbiased Hansen-Hurwitz estimator is
 $$
 \hat{\tau}_p = \frac{M}{n}\sum^n_{i=1}\frac{x_i}{M_i}
 $$
@@ -201,10 +201,6 @@ $$
 
 Unclear Questions:
 Simple random sample implies that an unit has a 1/N probability of being drawn. What is the distinction from the probability than an ith unit of the popultion is included, which is n/N
-     
-Soruces:
-1) "Sampling: Design and Analysis" Sharon L. Lohr
-
-2)"Sampling" Steven K. Thompson
 
 3) "Design an Inference in Finite Population Sampling" A. S. Hedayat, Bikas K. Sinha
+hed91

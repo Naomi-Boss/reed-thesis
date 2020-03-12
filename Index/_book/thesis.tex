@@ -242,7 +242,7 @@ Please visit \href{https://bookdown.org/yihui/bookdown/}{the free online bookdow
 \hypertarget{survey-methodology}{%
 \section{Survey Methodology}\label{survey-methodology}}
 \begin{verbatim}
-    (2)When you are trying to make asertain something about a population, the most accurate method would be to take data from the entire population. Evaluating the entire population can be cost and time insenstivie. Instead, one may utilize sampling, making an assesment of the population by some smaller part of the population. An important part of conducting a survey is to determine the best method to utilize. Deciding a sample size impacts the precision of the estimate and if the sample is the population, then the estimate is exact. Thus, it is often important to calculate the probability that the estimate is exact.(2)(3) There are two general kinds of sampling: probability and non-probability. The difference between the two is that with probability sampling, a probability of a draw is known. (3)
+    [@thompson_adaptive]When you are trying to make asertain something about a population, the most accurate method would be to take data from the entire population. Evaluating the entire population can be cost and time insenstivie. Instead, one may utilize sampling, making an assesment of the population by some smaller part of the population. An important part of conducting a survey is to determine the best method to utilize. Deciding a sample size impacts the precision of the estimate and if the sample is the population, then the estimate is exact. Thus, it is often important to calculate the probability that the estimate is exact.[@thompson_adaptive][@hed91] There are two general kinds of sampling: probability and non-probability. The difference between the two is that with probability sampling, a probability of a draw is known. [@hed91]
     - Sampling Procedures
  (1-9)
  
@@ -250,9 +250,9 @@ Please visit \href{https://bookdown.org/yihui/bookdown/}{the free online bookdow
       - Methods (section likely mixed rather than divided like so)
 \end{verbatim}
 \textbf{Simple Random Sampling}
-(1)Simple reandom sampling is a procedure in which you take n independent samples from a population of size N. There are two ways of executing a simple random sample, with replacement and without replacement. If you survey with replacement, every sample has probabiliy 1/N of being drawn. The advantage of surveying without replacement is that you do not have repeated observations in the sample. In finite population sampling a duplicate observation does not provide new information, so it is more usefule to sample without replacement. The samples in the population are still considered indepdent samples; however, since the population decreases by one every draw, the probability becomes \(\frac{n!\text{N-n}!}{N!}\). (1)
+(Lohr, n.d.)Simple reandom sampling is a procedure in which you take n independent samples from a population of size N. There are two ways of executing a simple random sample, with replacement and without replacement. If you survey with replacement, every sample has probabiliy 1/N of being drawn. The advantage of surveying without replacement is that you do not have repeated observations in the sample. In finite population sampling a duplicate observation does not provide new information, so it is more usefule to sample without replacement. The samples in the population are still considered indepdent samples; however, since the population decreases by one every draw, the probability becomes \(\frac{n!\text{N-n}!}{N!}\). (Lohr, n.d.)
 
-(2)When you draw n distinct units of observation(unit) from a population of size N without replacement, it is called \emph{Simple Random Sampling}. Each unit is indepdent of one another with equal probabilty of being drawn. The probability of drawing a specific unit from the population is 1/N. You can use a random number generator on a computer to determine which units to include in your sample. Since each unit has equal probability of being drawn, the population mean is the average of the observations:
+(Thompson \& Seber, n.d.)When you draw n distinct units of observation(unit) from a population of size N without replacement, it is called \emph{Simple Random Sampling}. Each unit is indepdent of one another with equal probabilty of being drawn. The probability of drawing a specific unit from the population is 1/N. You can use a random number generator on a computer to determine which units to include in your sample. Since each unit has equal probability of being drawn, the population mean is the average of the observations:
 \[
 \mu = \frac{1}{N} \left(x_1 + x_2 + \cdots + x_n \right) = \frac{1}{N} \sum^{N}_{i=1} x_i
 \]
@@ -289,11 +289,11 @@ The unbiased estimator of the variance of the sample mean is
 \[
 \widehat{\text{var}} \left( \overline{x}_n \right) = \frac{s^2}{n}
 \]
-(2)
+(Thompson \& Seber, n.d.)
 \textbf{Stratified:}
-(1)Stratified random sampling is a variation of sampling in which you partition the population into disjoint subpopulations that you sample from. The overall outcome of the survey is the combination of independent probability samples taken from the disjoint groups. There are several reasons why stratified random sampling can be advantageous. Stratified sampling can provide more precise estimates, especially if your aim involves comparing subgroups. Moreover, it allows flexibility in the method of conducting the surveye by customizing for each strata.(1)
+(Lohr, n.d.)Stratified random sampling is a variation of sampling in which you partition the population into disjoint subpopulations that you sample from. The overall outcome of the survey is the combination of independent probability samples taken from the disjoint groups. There are several reasons why stratified random sampling can be advantageous. Stratified sampling can provide more precise estimates, especially if your aim involves comparing subgroups. Moreover, it allows flexibility in the method of conducting the surveye by customizing for each strata.(Lohr, n.d.)
 
-(2)Another method of sampling is called stratified sampling, where you separate the population into disjoint subpopulations algorithmically. Then you can sample from each strata independenty. You can combine the mean and variations of each strata to caluclate the total variance and mean of the sample. One goal when designing the partition, is to minimize the variance within each strata. If the sampling procedure of each strata is simple random sampling, then the method is referred to as stratified random sampling. Both the sample mean and the \emph{i}th observation are random variables
+(Thompson \& Seber, n.d.)Another method of sampling is called stratified sampling, where you separate the population into disjoint subpopulations algorithmically. Then you can sample from each strata independenty. You can combine the mean and variations of each strata to caluclate the total variance and mean of the sample. One goal when designing the partition, is to minimize the variance within each strata. If the sampling procedure of each strata is simple random sampling, then the method is referred to as stratified random sampling. Both the sample mean and the \emph{i}th observation are random variables
 Here we can define elements and probabilities for stratified sampling. Let \emph{h} refer to a specific strata, with the population partitioned into \emph{L} stratas. Let us define the terms and variables associated with stratified sampling.
 Let h be a designator of the strata. The total population size is the sum of the sizes of each strata, \(N_h\). The sample size is the sum of the samples taken from each strata, denoted \(n_h\). We define \(\tau\) as the sum of the unit values in the population, and \(\tau_h\) to be the sum of the unit values in strata \emph{h}. The population mean is \(\mu/N\) and the mean of each strata is \(\mu_h = \tau_h/N_h\).
 Let \(\hat{\tau}_h\) be the unbiased estimator of \(\tau_h\). The unbiased estimator of the population is
@@ -311,7 +311,7 @@ The unbiased variance of the estimator, given that the sample selection from eac
 \[
 \widehat{\text{var}} \left( \hat{\mu}_{st} \right) = \frac{1}{N^2} \sum^L_{h=1} \hat{\text{var}} \left(\hat{\tau}_{st}\right)
 \]
-(2)
+(Thompson \& Seber, n.d.)
 \textbf{Cluster:}
 \emph{M}: total number of seconary units
 \emph{N}: the number of primary units
@@ -330,9 +330,9 @@ The unbiased variance of the estimator, given that the sample selection from eac
 \emph{r}: sample ratio
 \(p_i\): probability of draw proportional to \emph{i}th primary unit size.
 
-(1)Cluster sampling is similar to stratified sampling because both methods involve segmenting the primary population; however, the choice for how the population is split is different. A unit is included in the sample if it falls within the partition of the cluster. When calculating probabilities, you need to consider how many clusters there are, as well as how many units are within each cluster. A cluster sample can be advantageous because it is cheaper to conduct than other methods. Moreover, populations are often distributed in natural clusters such as comparing universities. (1)
+(Lohr, n.d.)Cluster sampling is similar to stratified sampling because both methods involve segmenting the primary population; however, the choice for how the population is split is different. A unit is included in the sample if it falls within the partition of the cluster. When calculating probabilities, you need to consider how many clusters there are, as well as how many units are within each cluster. A cluster sample can be advantageous because it is cheaper to conduct than other methods. Moreover, populations are often distributed in natural clusters such as comparing universities. (Lohr, n.d.)
 
-(2)The structure of cluster sampling and systemic sampling is the same. First the population is partitioned into units called \emph{primary units}. Within each unit was have \emph{secondary units}, or the units of observations. The primary unit of a cluster sample is determined by spacing proximity. On the other hand, the primary unit of a systemic sample is determined by equally spaced secondary units. The key aspect of cluster sampling and systematic sampling is that you choose the sample by selecting primary units, therefore, all secondary units in a primary unit will be included in the sample. There is variability in characterisitics of the primary units in cluster sampling, such as size and shape, which can provide supplementary information but can affect the efficiency of the sample.
+(Thompson \& Seber, n.d.)The structure of cluster sampling and systemic sampling is the same. First the population is partitioned into units called \emph{primary units}. Within each unit was have \emph{secondary units}, or the units of observations. The primary unit of a cluster sample is determined by spacing proximity. On the other hand, the primary unit of a systemic sample is determined by equally spaced secondary units. The key aspect of cluster sampling and systematic sampling is that you choose the sample by selecting primary units, therefore, all secondary units in a primary unit will be included in the sample. There is variability in characterisitics of the primary units in cluster sampling, such as size and shape, which can provide supplementary information but can affect the efficiency of the sample.
 
 The selection of primary units is conducted by other sampling procedures.You can use simple random sampling to select a primary unit. Calculating the unbiased estimators using simple random sampling without replacement:
 Estimator of population total
@@ -375,48 +375,31 @@ which has an estimator
 \widehat{\text{var}} \left( \hat{\tau}_r \right) \approx \frac{N(N-n)}{n(N-1)} \sum_{i=1}^n
 \left( x_i - rM_i\right)^2 
 \]
-The population mean per primary unit is calculated by dividing the ratio estimator by the number of primary units. (2)
-\begin{enumerate}
-\def\labelenumi{(\arabic{enumi})}
-\item
-  Systemactic sampling is a specific kind of cluster sampling. First decide on the number of samples n. Choose a random number between 1 and the number of clusters, this will (1)
-\item
-  The Hansen-Hurwits estimator is a cluster sampling method which proportionalizes the probability of drawing the primary unit based on the size. The unbiased Hansen-Hurwitz estimator is
-  \[
-  \hat{\tau}_p = \frac{M}{n}\sum^n_{i=1}\frac{x_i}{M_i}
-  \]
+The population mean per primary unit is calculated by dividing the ratio estimator by the number of primary units. (Thompson \& Seber, n.d.)
+
+(Lohr, n.d.) Systemactic sampling is a specific kind of cluster sampling. First decide on the number of samples n. Choose a random number between 1 and the number of clusters, this will (Lohr, n.d.)
+
+(Thompson \& Seber, n.d.) The Hansen-Hurwits estimator is a cluster sampling method which proportionalizes the probability of drawing the primary unit based on the size. The unbiased Hansen-Hurwitz estimator is
+\[
+\hat{\tau}_p = \frac{M}{n}\sum^n_{i=1}\frac{x_i}{M_i}
+\]
 \begin{verbatim}
-  - Advantages/Disadvantages
-  pg 255
-  Unequal sampling - chp 6
-  pg 49
-  113-125
-\end{verbatim}
-  \begin{itemize}
-  \tightlist
-  \item
-    Data Collection
-    \begin{itemize}
-    \tightlist
-    \item
-      Designing survey (sample unit, sample size, hypothesis/motivation role)
+      - Advantages/Disadvantages
+      pg 255
+      Unequal sampling - chp 6
+      pg 49
+      113-125
+ - Data Collection
+      - Designing survey (sample unit, sample size, hypothesis/motivation role)
       pg 247
       pg 258
       31-33
-    \item
-      Survey method (brief list e.g.~interview, questionnaire)
-    \end{itemize}
-  \item
-    Data Analysis
-    \begin{itemize}
-    \tightlist
-    \item
-      Hypothesis testing
-    \item
-      Inference
-    \end{itemize}
-  \end{itemize}
-\end{enumerate}
+      - Survey method (brief list e.g. interview, questionnaire)
+ - Data Analysis
+      - Hypothesis testing
+      - Inference
+ 
+\end{verbatim}
 \hypertarget{non-probability-sampling}{%
 \section{Non-Probability Sampling}\label{non-probability-sampling}}
 \begin{verbatim}
@@ -462,17 +445,13 @@ The population mean per primary unit is calculated by dividing the ratio estimat
 \end{verbatim}
 Unclear Questions:
 Simple random sample implies that an unit has a 1/N probability of being drawn. What is the distinction from the probability than an ith unit of the popultion is included, which is n/N
-
-Soruces:
-1) ``Sampling: Design and Analysis'' Sharon L. Lohr
-
-2)``Sampling'' Steven K. Thompson
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
 \setcounter{enumi}{2}
 \tightlist
 \item
   ``Design an Inference in Finite Population Sampling'' A. S. Hedayat, Bikas K. Sinha
+  hed91
 \end{enumerate}
 \hypertarget{math-sci}{%
 \chapter{tbd}\label{math-sci}}
@@ -609,9 +588,9 @@ You might want to footnote something.\footnote{footnote text} The footnote will 
 
 Of course you will need to cite things, and you will probably accumulate an armful of sources. There are a variety of tools available for creating a bibliography database (stored with the .bib extension). In addition to BibTeX suggested below, you may want to consider using the free and easy-to-use tool called Zotero. The Reed librarians have created Zotero documentation at \url{http://libguides.reed.edu/citation/zotero}. In addition, a tutorial is available from Middlebury College at \url{http://sites.middlebury.edu/zoteromiddlebury/}.
 
-\emph{R Markdown} uses \emph{pandoc} (\url{http://pandoc.org/}) to build its bibliographies. One nice caveat of this is that you won't have to do a second compile to load in references as standard LaTeX requires. To cite references in your thesis (after creating your bibliography database), place the reference name inside square brackets and precede it by the ``at'' symbol. For example, here's a reference to a book about worrying: (Molina \& Borkovec, 1994). This \texttt{Molina1994} entry appears in a file called \texttt{thesis.bib} in the \texttt{bib} folder. This bibliography database file was created by a program called BibTeX. You can call this file something else if you like (look at the YAML header in the main .Rmd file) and, by default, is to placed in the \texttt{bib} folder.
+\emph{R Markdown} uses \emph{pandoc} (\url{http://pandoc.org/}) to build its bibliographies. One nice caveat of this is that you won't have to do a second compile to load in references as standard LaTeX requires. To cite references in your thesis (after creating your bibliography database), place the reference name inside square brackets and precede it by the ``at'' symbol. For example, here's a reference to a book about worrying: ({\textbf{???}}). This \texttt{Molina1994} entry appears in a file called \texttt{thesis.bib} in the \texttt{bib} folder. This bibliography database file was created by a program called BibTeX. You can call this file something else if you like (look at the YAML header in the main .Rmd file) and, by default, is to placed in the \texttt{bib} folder.
 
-For more information about BibTeX and bibliographies, see our CUS site (\url{http://web.reed.edu/cis/help/latex/index.html})\footnote{Reed~College (2007)}. There are three pages on this topic: \emph{bibtex} (which talks about using BibTeX, at \url{http://web.reed.edu/cis/help/latex/bibtex.html}), \emph{bibtexstyles} (about how to find and use the bibliography style that best suits your needs, at \url{http://web.reed.edu/cis/help/latex/bibtexstyles.html}) and \emph{bibman} (which covers how to make and maintain a bibliography by hand, without BibTeX, at \url{http://web.reed.edu/cis/help/latex/bibman.html}). The last page will not be useful unless you have only a few sources.
+For more information about BibTeX and bibliographies, see our CUS site (\url{http://web.reed.edu/cis/help/latex/index.html})\footnote{({\textbf{???}})}. There are three pages on this topic: \emph{bibtex} (which talks about using BibTeX, at \url{http://web.reed.edu/cis/help/latex/bibtex.html}), \emph{bibtexstyles} (about how to find and use the bibliography style that best suits your needs, at \url{http://web.reed.edu/cis/help/latex/bibtexstyles.html}) and \emph{bibman} (which covers how to make and maintain a bibliography by hand, without BibTeX, at \url{http://web.reed.edu/cis/help/latex/bibman.html}). The last page will not be useful unless you have only a few sources.
 
 If you look at the YAML header at the top of the main .Rmd file you can see that we can specify the style of the bibliography by referencing the appropriate csl file. You can download a variety of different style files at \url{https://www.zotero.org/styles}. Make sure to download the file into the csl folder.
 
@@ -629,7 +608,7 @@ If you look at the YAML header at the top of the main .Rmd file you can see that
 \item
   To force capitalization in an article title or where all lowercase is generally used, bracket the capital letter in curly braces.
 \item
-  You can add a Reed Thesis citation\footnote{Noble (2002)} option. The best way to do this is to use the phdthesis type of citation, and use the optional ``type'' field to enter ``Reed thesis'' or ``Undergraduate thesis.''
+  You can add a Reed Thesis citation\footnote{({\textbf{???}})} option. The best way to do this is to use the phdthesis type of citation, and use the optional ``type'' field to enter ``Reed thesis'' or ``Undergraduate thesis.''
 \end{itemize}
 \hypertarget{anything-else}{%
 \section{Anything else?}\label{anything-else}}
@@ -707,23 +686,11 @@ This first appendix includes all of the R chunks of code that were hidden throug
 \setlength{\parskip}{8pt}
 
 \hypertarget{refs}{}
-\leavevmode\hypertarget{ref-angel2000}{}%
-Angel, E. (2000). \emph{Interactive computer graphics : A top-down approach with opengl}. Boston, MA: Addison Wesley Longman.
+\leavevmode\hypertarget{ref-lohr_sampling}{}%
+Lohr, S. (n.d.). \emph{Sampling: Design and Analysis}. Duxbury Press.
 
-\leavevmode\hypertarget{ref-angel2001}{}%
-Angel, E. (2001a). \emph{Batch-file computer graphics : A bottom-up approach with quicktime}. Boston, MA: Wesley Addison Longman.
-
-\leavevmode\hypertarget{ref-angel2002a}{}%
-Angel, E. (2001b). \emph{Test second book by angel}. Boston, MA: Wesley Addison Longman.
-
-\leavevmode\hypertarget{ref-Molina1994}{}%
-Molina, S. T., \& Borkovec, T. D. (1994). The Penn State worry questionnaire: Psychometric properties and associated characteristics. In G. C. L. Davey \& F. Tallis (Eds.), \emph{Worrying: Perspectives on theory, assessment and treatment} (pp. 265--283). New York: Wiley.
-
-\leavevmode\hypertarget{ref-noble2002}{}%
-Noble, S. G. (2002). \emph{Turning images into simple line-art} (Undergraduate thesis). Reed College.
-
-\leavevmode\hypertarget{ref-reedweb2007}{}%
-Reed~College. (2007). LaTeX your document. Retrieved from \url{http://web.reed.edu/cis/help/LaTeX/index.html}
+\leavevmode\hypertarget{ref-thompson_adaptive}{}%
+Thompson, S., \& Seber, G. (n.d.). \emph{Adaptive Sampling}. Wiley.
 
 
 % Index?
