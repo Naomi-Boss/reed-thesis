@@ -1,0 +1,36 @@
+ORIGINAL                      MINE
+polls_extra                   aux_polls
+polss_main                    main_polls
+pre_process_f                 f_poll_data_prep
+                              input_poll_data
+y_i                           pred_r_vs
+                              republican
+                              democratic
+v_r                           election_r_vs
+finalTwoPartyVSRepublican     final_two_party_vs_republican
+twoparty_voteshare_error      r_vs_error
+days_to_election              days_until_elec
+electionDate                  election_date
+endDate                       poll_end_date
+numberOfRespondents           number_of_respondents
+n_i                           resp_prefer_major_two
+                              state_year_concat
+                              state
+                              year
+sim_srs_result_f              f_srs_vs_sim
+                              srs_vs_result
+                              each_election_type_srs_polls_count
+election_type                 election
+  "Senatorial"                  "Sen"
+  "Presidential"                "Pres"
+  "Gubernatorial"               "Gov"
+                              selected_polls_srs_results
+                              selected_polls_indexes
+                              srs_polls_data
+plot_dt                       srs_and_real_plot_data
+histogram_bw                  histogram_bin_size
+NA                            fill_color
+NA                            line_type
+NA                            error_actual
+NA                            error_srs
+p                             density_comparison
