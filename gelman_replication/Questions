@@ -4,3 +4,17 @@ preprocess_polls_f in data_exploration.R
 
 Why :=
 
+Why does the paper use 7,040 in their analysis for auxiliary data
+but dataframe, after paring has 10444 obs.
+
+Why need
+                     breaks = seq(-.1,0.1,0.05),
+                     limits = c(-.1, .1),
+                     labels = label_percent()) 
+      in scale_x_continuous
+  
+Warning messages:
+1: Removed 52 rows containing non-finite values (stat_bin). 
+2: Removed 103 rows containing non-finite values (stat_density). 
+3: Removed 6 rows containing missing values (geom_bar).
+      
