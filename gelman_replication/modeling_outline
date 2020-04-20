@@ -1,0 +1,65 @@
+Data Exploration:
+
+Variables:
+i: specific poll
+n_i: number of respondents in poll i who prefer D or R
+v_{r[i]}: final two party vote share for R
+r[i]: election corresponding to the poll i
+\overline{y}_i: average poll estimate for election r
+S_r: set of polls for election r
+y_i: two-party support for R in poll i
+
+RMSE:
+i: specific poll
+y_i: two party support for republican candidate
+N: number of polls
+r[i]: election corresponding to poll i
+\sqrt{\frac{1}{N}\sum_{i=1}^N (y_i - v_{r[i]})^2}
+
+
+
+Estimate Total Survey Error by computing the difference between
+  (1) support for R candidate in poll
+  (2) final vote share for that candidate on election day
+  
+*two-party poll and vote share*
+
+Figure: Distribution of differences
+  positive values: more support in poll than in election
+
+*polling errors centered at 0
+*polls exhibit substationally larger errors than one would expect from SRS
+
+Figure: poll error measured by RMSE (of a 7 day window) against time
+
+Avg poll estimate:
+\overline{y}_r = \frac{1}{|S_r|}\sum_{i\in S_r}y_i
+
+
+
+
+Simulate polling result by drawing sample from Binomial
+~Binom(v_r, n_i/2) -> halving the size of the poll doubles variance -> increases dispersion of poll averages
+
+
+
+Model for Election Polls:
+Their Result:
+  Bias: systematic errors shared by all polls in a specific election
+  Variance: residual dispersion for various reasons
+  
+  
+*****
+Bayesian meta-analysis of survey results
+*****
+
+Let y_i denote the two-party support for R (poll) for poll i in election r[i] at time t[i] with n_i respondents who prefer D or R
+
+v_{r[i]} denote final two party share
+
+
+
+model poll outcome:
+y_i ~ N(p_i, \sigma^2_i)
+logit(p_i) = logit(v_r[i]) + \alpha_{r[i]} + \beta_{r[i]}t_i
+\sigma^2-i+ 
