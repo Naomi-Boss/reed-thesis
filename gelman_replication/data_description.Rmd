@@ -1,0 +1,25 @@
+---
+title: "Data Description Replication"
+author: "Naomi Boss"
+date: "4/13/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(data.table)
+library(scales)
+set.seed(0119)
+```
+
+```{r Load Data}
+main_polls <- clean_names(fread("polling-errors-master/data/polls-main_dataset.tsv"))
+
+aux_polls <- clean_names(fread("polling-errors-master/data/polls_auxiliary_dataset.tsv"))
+
+```
+
+
+Our main dataset consists of 4221 polls whose results were published within 3 weeks of election day. 
