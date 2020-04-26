@@ -171,11 +171,7 @@ This is an example of a thesis setup to use the reed thesis document class
 }
 
 \Abstract{
-The preface pretty much says it all.
-
-\par
-
-Second paragraph of abstract starts here.
+\#Abstract
 }
 
 % End of CII addition
@@ -205,11 +201,7 @@ Second paragraph of abstract starts here.
 
   \listoffigures
   \begin{abstract}
-    The preface pretty much says it all.
-    
-    \par
-    
-    Second paragraph of abstract starts here.
+    \#Abstract
   \end{abstract}
   \begin{dedication}
     You can have a dedication here if you wish.
@@ -454,7 +446,7 @@ Simple random sample implies that an unit has a 1/N probability of being drawn. 
   hed91
 \end{enumerate}
 \hypertarget{math-sci}{%
-\chapter{tbd}\label{math-sci}}
+\chapter{Replication of Variance}\label{math-sci}}
 
 \hypertarget{ref-labels}{%
 \chapter{Tables, Graphics, References, and Labels}\label{ref-labels}}
@@ -630,46 +622,46 @@ And here's some other random info: the first paragraph after a chapter title or 
 \hypertarget{the-first-appendix}{%
 \chapter{The First Appendix}\label{the-first-appendix}}
 
-This first appendix includes all of the R chunks of code that were hidden throughout the document (using the \texttt{include\ =\ FALSE} chunk tag) to help with readibility and/or setup.
+Partial Pooling Multilevel Regression
 
-\textbf{In the main Rmd file}
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{# This chunk ensures that the thesisdown package is}
-\CommentTok{# installed and loaded. This thesisdown package includes}
-\CommentTok{# the template files for the thesis.}
-\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{require}\NormalTok{(devtools))}
-  \KeywordTok{install.packages}\NormalTok{(}\StringTok{"devtools"}\NormalTok{, }\DataTypeTok{repos =} \StringTok{"http://cran.rstudio.com"}\NormalTok{)}
-\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{require}\NormalTok{(thesisdown))}
-\NormalTok{  devtools}\OperatorTok{::}\KeywordTok{install_github}\NormalTok{(}\StringTok{"ismayc/thesisdown"}\NormalTok{)}
-\KeywordTok{library}\NormalTok{(thesisdown)}
-\end{Highlighting}
-\end{Shaded}
-\textbf{In Chapter \ref{ref-labels}:}
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{# This chunk ensures that the thesisdown package is}
-\CommentTok{# installed and loaded. This thesisdown package includes}
-\CommentTok{# the template files for the thesis and also two functions}
-\CommentTok{# used for labeling and referencing}
-\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{require}\NormalTok{(devtools))}
-  \KeywordTok{install.packages}\NormalTok{(}\StringTok{"devtools"}\NormalTok{, }\DataTypeTok{repos =} \StringTok{"http://cran.rstudio.com"}\NormalTok{)}
-\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{require}\NormalTok{(dplyr))}
-    \KeywordTok{install.packages}\NormalTok{(}\StringTok{"dplyr"}\NormalTok{, }\DataTypeTok{repos =} \StringTok{"http://cran.rstudio.com"}\NormalTok{)}
-\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{require}\NormalTok{(ggplot2))}
-    \KeywordTok{install.packages}\NormalTok{(}\StringTok{"ggplot2"}\NormalTok{, }\DataTypeTok{repos =} \StringTok{"http://cran.rstudio.com"}\NormalTok{)}
-\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{require}\NormalTok{(ggplot2))}
-    \KeywordTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{, }\DataTypeTok{repos =} \StringTok{"http://cran.rstudio.com"}\NormalTok{)}
-\ControlFlowTok{if}\NormalTok{(}\OperatorTok{!}\KeywordTok{require}\NormalTok{(thesisdown))\{}
-  \KeywordTok{library}\NormalTok{(devtools)}
-\NormalTok{  devtools}\OperatorTok{::}\KeywordTok{install_github}\NormalTok{(}\StringTok{"ismayc/thesisdown"}\NormalTok{)}
-\NormalTok{  \}}
-\KeywordTok{library}\NormalTok{(thesisdown)}
-\NormalTok{flights <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/flights.csv"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-\hypertarget{the-second-appendix-for-fun}{%
-\chapter{The Second Appendix, for Fun}\label{the-second-appendix-for-fun}}
+Multilevel linear regression is a method of linear regression where the coefficients of the parameters vary at multiple levels of the data. We often use this method when the data we have is clustered or nested. One way to think about multilevel modeling is as a compromise between aggregated and disaggregated regression, otherwise known as complete pooling and no-pooling. We will use the following notation for single level grouping:
+* j = 1,\ldots{},J groups
+* j{[}i{]} identifies the group that the i\^{}\{th\} obsrvation belongs in. (e.g.~j{[}19{]}= 3 means that observation 19 belongs in group 3)
+* k predictors
+* Vector \(\beta\) of coefficients
+* varying intercept model: \(y_i = \alpha_{j[i]} + \beta x_i + \epsilon_i\) or \(y_i \sim N(\alpha_{j[i]} + \beta x_i, \space \sigma_y^2)\)
+* varying intercept, varying slope model: \(y_i = \alpha_{j[i]} + \beta_{j[i]}x_i + \epsilon_i\) or \(y_i \sim N(\alpha_{j[i]} + \beta_{j[i]} x_i,\space \sigma_y^2)\)
+* multiple predictors: \(y_i = X_i + B + \epsilon_i\) or \(y_i \sim N(X_iB, \space \sigma^2_y)\) where B is a matrix of coefficients.
+
+Consider the following example.
+Say that we are investigating the number of sourdough loaves baked per bakery in J=6 cities. The city of Lilliput has 12 bakeries, Gotham City has 2 bakeries, (3) has 7 bakers, Arkham has 15 bakeries, and Seymour's Bay has 10 bakeries. One attempt would be to find the average loaves per bakery across all of the cities. This is known as complete-pooling, where we do not consider the categorical predictor in the model (i.e.~ignoring which city the bakery is in). This method ignores the differences between each city. For example, let's say that in Gotham City, the citizens ate more bread than those in (3). Then it would make sense that the bakeries in Arkham would, on average, bake more bread than those in (3) but since we average across all groups we would be underestimating loaves per bakery in Arkham and overestimating the loaves per bakery in (3). This can run the risk of falling into the ecological fallacy. After sampling, we find calculate \(\overline{y} = 215\).
+
+On the otherhand, we could fit an estimate for each city that we are sampling from, which would result in 6 different estimates. This is called no-pooling. This method can result in bad estimates for groups with small sample sizes. Using the no-pooling method, we find that \(\overline{y}_1 = 180\), \(\overline{y}_2 = 250\), \(\overline{y}_3 = 190\), \(\overline{y}_4 = 250\), and \(\overline{y}_5 = 205\). Since we only sampled from 2 bakeries in Gotham City, can we really say that all of their bakeries bake that much? This makes it seem like the bakeries from city to city are more different than they actually are.
+
+Instead, let us use multilevel modeling, otherwise known as partial pooling, to make estimates for the bakeries. We can consider this a compromise between complete pooling and no-pooling. Roughly speaking, the multilevel estimate of the average loaves per bakery is the weighted average of the mean within the city and the mean across all of the cities. We weight the means with their respective variances. The amount of information we have for each city is seen in the weighted averages. If we have a small sample, then the partial pooled mean will be pulled closer to the complete pooled mean instead of the no-pooled mean. We can see this in the following example.
+
+Let's compare the estimates for Gotham City and Arkham. Let's assume that the within county variance, \(\sigma^2_y = 3\) and the overall variance between bakeries be \(\sigma^2_\alpha=4\). The partial pooled estimate of Gotham City would be:
+\[
+\begin{aligned}
+\frac{\frac{2}{3} 250 + \frac{1}{4} 200}{\frac{2}{3} + \frac{1}{4}} \approx 236
+\end{aligned}
+\]
+Let's compare this estimate to the partial pooled estimate of Arkham
+\[
+\begin{aligned}
+\frac{\frac{10}{3} 250 + \frac{1}{4} 200}{\frac{10}{3} + \frac{1}{4}} \approx 247
+\end{aligned}
+\]
+We can see that the partial pooled estimate of Gotham City which only sampled from 2 bakeries is much closer to the complete pooled estimate as compared to the partial pooled estimate of Arkham.
+
+Now let us consider partial pooling with predictor variables. For our scenario, the predictors are
+\textbf{B} = (which cities these bakeries are in, the number of patrons per day, the average income of the city, and the average household size of the city).
+In a regression setting, complete pooling with predictors fits a model onto all of the data, ignoring the group it resides in. In this case we would estimate a single coefficient for each predictor based on all of the data, assuming that each bakery is independent of one another. The complete pooling regression can be written as \(y_i = \alpha + BX_i + \epsilon)i\). On the otherhand we have the no-pooling model. An extreme definition of no-pooling is when you fit a regression model onto each group, resulting in k models. However a more common use of the term no-pooling is when when we include an variable indicating the group the observation belongs to. We then run a regression model including the factor variable, which has it's own coefficient. This model assigns a different intercept to each group. A no-pooling regression can be written as \(y_i = \alpha_{j[i]} + B X_i + epsilon_i\) with j{[}i{]} indicating the group. As before, the complete pooling method ignores the variation between the cities and the no-pooling analysis can still overfit the data.
+
+This brings us to multilevel regression analysis. The simplest partial pooled regression, the varying-intercept regression, can be written as \(y_i \sim N(\alpha_{j[i]} + BX_i, \space \sigma_y^2)\). The key difference between the varying-intercept model and no-pooling is the \(\alpha_j\)s. In no-pooling regression, \(\alpha_{j[i]}\) is determined by using the method of least squares for the intercept of each county. In the multilevel model, the \(\alpha_{j}\)s are assigned a probability distribution,
+\(\alpha_j \sim N(\mu_\alpha, \space \sigma_\alpha^2)\) for j=1,\ldots{},J
+which places a constraint on the intercept. Here \(\sigma_\alpha^2\) is the county level variance and \(\mu_\alpha\) is the estimated average regression for all of the data. In otherwords, the partial pooled regression model pulls the intercept closer to the overall average intercept as the group level standard deviation gets smaller. We can express the partial pooling estimate for \(\alpha_j\) as
+\[ \hat{\alpha}_j \approx \frac{\frac{n_j}{\sigma_y^2}}{\frac{n_j}{\sigma_y^2} + \frac{1}{\sigma^2_\alpha}}(\overline{y}_i - B\overline{X}_j) + \frac{\frac{1}{\sigma_\alpha^2}}{\frac{n_j}{\sigma_y^2} + \frac{1}{\sigma^2_\alpha}}\mu_\alpha\]
 
 \backmatter
 
