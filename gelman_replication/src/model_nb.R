@@ -6,132 +6,69 @@
 library(data.table)
 library(tidyverse)
 library(extraDistr)
+set.seed(1408)
 
-#Generate an election result for each poll in the df using SRS
-sim_srs_result_f <- function (v_r, n_i) {
-  srs_result <- rbinom(length(n_i), size = n_i, prob = v_r)/n_i
-}
+#####Create functions
 
-polls_main <-polls_main %>% 
-  mutate(poll_srs_result = sim_srs_result_f(v_r, n_i))
-
-
-# ######Modeling
-# 
-# ####Define any Functions
-# logit_f <- function(v_r){
-#   v_r / (1 - v_r)
+# sim_srs_result_f <- function (v_r, n_i) {
+#   srs_result <- rbinom(length(n_i), size = n_i, prob = v_r)/n_i
 # }
-# 
-# log_odds <- function(p){
-#   p / (1 + p)
-# }
-# 
-# ####Create model data
-# model_data <- polls_main %>%
-#   mutate(specific_elec = fct_cross(election, electionDate),
-#          logit_v = logit_f(v_r)) %>%
-#   select(y_i,
-#          v_r,
-#          n_i,
-#          days_to_election,
-#          specific_elec,)
-# 
-# 
-# ####Set Parameters
-# #hyperparameters
-# sigma_tau <- rhnorm(N_polls, 0.05^2)
-# sigma_beta <- rhnorm(N_polls, 0.2^2)
-# mu_beta <- rnorm(N_polls, 0.2^2)
-# sigma_alpha <- rhnorm(N_polls, 0.2^2)
-# mu_alpha <- rnorm(N_polls, 0.2^2)
-# 
-# #parameters
-# alpha_j <- rnorm(mu_alpha, sigma_alpha^2)
-# beta_j <- rnorm(mu_beta, sigma_beta^2)
-# tau_j_sq <- rhnorm(1, sigma_tau^2)
-# 
-# #constants
-# N_polls <- length(model_data)
-# 
-# #vectors
-# logit_p_i <- logit_f(v_r) + alpha_j + beta_j*t_i
-# p_i <- log_odds(logit_p_i)
-# sigma_sq_i <- (p_i * (1 - p_i))/n_i + tau_j_sq
-# 
-# y_sim <- rep(N_polls, rnorm(p_i, sigma_sq_i))
-# 
-# 
-# ####preliminaries
-# #k is number of elections in consideration
-# k <- length(unique(model_data$specific_elec))
-# 
-# b_r <- 
-# 
-# mu_b <- 1/k * sum()
-# 
+
+#####Parameters
+
+##Hyperparameters
+sigma_a <- rnorm(1, mean = 0, sd = 0.2)
+#sigma <- rhnorm(1, 0.2)
+sigma_b <- rnorm(1, mean = 0, sd = 0.2)
+#sigma_b <- rhnorm(1, 0.2)
+sigma_tau <- rnorm(1, mean=0, sd = 0.05)
+#sigma_tau <- rhnorm(1, 0.05)
+  #in the text they modeled this with the half normal but 
+  #the stan code suggests they just drew from the normal
+
+mu_a <- rnorm(1, mean = 0, sd = 0.2)
+mu_b <- rnorm(1, mean = 0, sd = 0.2)
+
+alpha <- rnorm(1, mean = mu_a, sd = sigma_a)
+beta <- rnorm(1, mean = mu_b, sd = sigma_b)
+tao_sqr <- rhnorm(1, sigma = sigma_tao)
 
 #####Data
 model_data <- polls_main %>%
-  mutate(specific_elec = fct_cross(election, electionDate),
-         logit_v = logit_f(v_r),
-         poll_bias = 0) %>%
-  select(y_i,
-         v_r,
-         n_i,
-         days_to_election,
-         specific_elec,
-         poll_bias)
+mutate(specific_elec = fct_cross(election, electionDate),
+      logit_v = logit_f(v_r),
+      p = 0,
+      poll_srs_result = sim_srs_result(f(v_r, n_i)),
+      t = days_to_election/30,
+      model_y = 0) %>%
+select(y_i,
+       v_r,
+       n_i,
+       days_to_election,
+       specific_elec,
+       poll_bias,
+       poll_srs_result,
+       t)
+
+#####Specifications
+N_poll <- nrow(model_data)
+p <- rep(NA, N_poll)
+
+logit_p <- model_data$logit_v + model_data$t * beta + alpha 
+
+for(i in 1:N_poll) {
+  p <- invlogit(logit_p)
+  model_data$p[i] <- p
+  sigma_i <- sqrt( p * (1 -p)/n + )
+  model_data$model_y[i] <- normal(model_data$p[i], )
+}
 
 
 g <- levels(model_data$specific_elec)
-model_data <- suppressWarnings(split(model_data, g))
+grouped_model_data <- suppressWarnings(split(model_data, g))
 
-#####Constants
-N_elec <- length(g)
-S_r <- rep(NA, N_elec)
 
-#####Add poll bias to data
 
-for(i in 1:k){
-  
-  N_polls <- nrow(model_data[[1]])
-  
-  #hyperparameters
-  sigma_tau <- rhnorm(N_polls, 0.05^2)
-  sigma_beta <- rhnorm(N_polls, 0.2^2)
-  mu_beta <- rnorm(N_polls, 0.2^2)
-  sigma_alpha <- rhnorm(N_polls, 0.2^2)
-  mu_alpha <- rnorm(N_polls, 0.2^2)
-  
-  #parameters
-  alpha_j <- rnorm(mu_alpha, sigma_alpha^2)
-  beta_j <- rnorm(mu_beta, sigma_beta^2)
-  tau_j_sq <- rhnorm(1, sigma_tau^2)
-  
-  for(j in 1:N_polls){
-    t_i <- model_data[[1]][j,4]
-    model_data[[j]]$poll_bias <- alpha_j[j] + beta_j[j]*t_i
-  }
-}
 
-##equations
-logit(p_i) = logit(v_{r[i]}) + alpha_{r[i]} + beta_{r[i]}*t_i
-logit(q_r) = logit(v_r) + alpha_r
-sigma_i^2 = p_i*(1 - p_i) / n_i + tau_{r[i]}^2
-
-#average election bias
-mu_b = (1/k)*sum(abs(b_r))
-
-#bias for election r
-b_r = (1/lenght(S_r))*sum(p_i - v_r)
-
-#absolute bias on election day
-mu_beta0 = (1/k)*sum(abs(q_r - v_r))
-
-#average election level standard deviation
-mu_sigma = (1/k)*sum(sigma_r)
-
-sigma_r = (1/length(S_r))*sum(sigma_i)
 
 
